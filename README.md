@@ -1,18 +1,20 @@
+![GA logo](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67)
+
 # Command line lab
 
 ## Introduction
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
-Developing web apps requires a degree of comfort navigating and interacting with your operating system through the command line, and similar to how you'll be practicing writing and running Ruby and JavaScript later in the course, we'll be practicing creating, modifying, and moving files and folders (in the Unix command line environment, we refer to folders as **directories**) in your terminal to get you practicing Unix commands. 
+Developing web apps requires a degree of comfort navigating and interacting with your operating system through the command line. Later in the course, you'll be writing and running Python and JavaScript programs and running them from the command line.  For now, we'll be practicing creating, modifying, and moving files and directories (in the Unix command line environment, we refer to folders as **directories**) in your terminal to get you practicing Unix commands. 
 
-So close Finder now and don't open it again.  If you wanna organize photos from your family reunion then ok, but for anything related to web development...) As developers we use the Unix command line almost exclusively for managing files and folde--whoops! I meant *directories*.  
+So close Finder now and don't open it again.  If you wanna use Finder to organize photos from your family holiday or sweet vacation last summer then that's fine, but never use it for anything related to web development!  As developers we use the Unix command line almost exclusively for managing files and folde--whoops! I meant ***directories***.  
 
 For your first lab, you're going to create files and directories to organize your favorite books, movies, and music. Then, you're going to reorganize them.
 
 There are a couple links to Unix command cheatsheets in the "Additional Resources" section, and you could probably find dozens of useful ones on Google.
 
-### Helpful tip: 
+### Important: "Man(ual) pages" 
 
 Nearly every Unix command has a what's called a "[man page](https://en.wikipedia.org/wiki/Man_page)" (short for "manual page").  You can get extensive info about how any Unix command works by typing `man` and then the name of the program. 
 
@@ -22,68 +24,70 @@ For example...
 $ man ls
 ```
 
-...will give you exhaustive information about how the `ls` command works and the different options (called "flags") you can use to customize the output.  Get in the habit of using `man` pages.
+...will give you exhaustive information about how the `ls` command works and the different options (called "flags") you can use to customize the output.  It'll seem like too much information at first, because it is at this point, but get in the habit of using `man` pages now, and you'll learn to love them.
+
+Hit the `Q` key to get out of the man page viewer.
 
 
 ## Exercise
 
 #### Requirements
 
-- From your root directory, create a directory called `my-favorite-things`. You'll use that folder to do the exercises below.
+- In your directory for today, create a directory called `command-line-lab`. Inside of `command-line-lab`, create a directory called `my-favorite-things`. You'll use that directory to do the exercises below.
 
 - Organize your favorite books
   - in the `my-favorite-things` directory, create a directory called `books`
-  - create a folder in books named after your favorite author (e.g. "mark-twain", or "john-grisham", but avoid spaces!)
-  - create files named after some of the author's books in the author's folder
-  - open the books folder in atom/sublime
-  - edit each file to put a brief description of the book
+  - create a directory in books named after your favorite author (e.g. `mark_twain`, or `john-grisham`, but avoid spaces!)
+  - create files named after some of the author's books in the author's directory
+  - open the `books` directory in Sublime/Atom
+  - edit each book file to contain a brief description of the book
 
 
 - Organize your favorite movies
 
-  - in the "my-favorite-things" folder, create a folder called "movies"
-  - create a folder in movies named after your favorite actor
-  - create a folder in the actor folder named after the actor's breakthrough movie
-  - create a text file named after the actor's character in the breakthrough movie in the top level "movies" directory
-  - move the text file to the breakthrough movie's folder
-  - look back at Sublime/Atom and edit that text file with a description of the character's role in the movie
+  - in the `my-favorite-things` directory, create a directory called `movies`
+  - create a directory in the movies directory named after your favorite actor
+  - create a directory in that actor directory named after that actor's breakthrough movie
+  - go back to the `movies` directory and create a text file named after the actor's character in their breakthrough movie
+  - move the text file into the directory for their
+  - look back at Sublime/Atom and edit that text file to include a description of the character's role in the movie
 
 
 - Organize your favorite music
 
-  - in the my-favorite-things folder, create a folder called "music"
-  - move into the "music folder"
-  - create a folder called "disco"
-  - create a text file in "disco" called "ymca"
-  - delete the "disco" folder
-  - create a folder called "creed"
-  - delete the "creed" folder
-  - create folders called "one-direction", "the-strokes", and "rihanna"
-  - create a text file in "one-direction" called "what-makes-you-beautiful.txt"
-  - make two copies "what-makes-you-beautiful.txt" - one into "the-strokes" and one into "rihanna" and rename those files with songs by those artists
+  - in the `my-favorite-things` directory, create a directory called `music`
+  - go into the `music` directory
+  - create a directory called `disco`
+  - create a text file in `disco` called `ymca`
+  - delete the `disco` directory
+  - create a directory called `creed`
+  - delete the `creed` directory
+  - create directories called `one-direction`, `the-strokes`, and `rihanna`
+  - create a text file in `one-direction` called `what-makes-you-beautiful.txt`
+  - from within `one-direction`, copy (**not move**) `what-makes-you-beautiful.txt` into `the-strokes` and also copy it into `rihanna`. rename those files with songs by those artists.
 
 
 - Reorganize _everything_
 
-  - in the my-favorite-things folder, create a folder called "media"
-  - move "books", "movies", and "music" into the "media" folder
+  - in the `my-favorite-things` directory, create a directory called `media`
+  - move `books`, `movies`, and `music` into the `media` directory
 
 
 - Organize the top music, movies, and books of 2015
 
-  - move to the my-favorite-things folder and copy the "media" folder, then, rename it "2015-media"
-  - in the 2015-media folder, rename each folder to have "2015-" before the title
-  - delete the contents of "2015-music", "2015-movies", and "2015-books"
-  - create a file called "top-ten-movies.html" in "2015-movies"
-  - create a file called "top-ten-songs.html" in "2015-music"
-  - create a file called "top-ten-books.html" in "2015-books"
+  - move to the `my-favorite-things` directory and duplicate (make a copy of) the `media` directory—your copy should be named `2015-media`
+  - in the `2015-media` directory, rename each directory to have `2015-` before the title
+  - delete the contents of `2015-music`, `2015-movies`, and `2015-books`
+  - create a file called `top-ten-movies.html` in `2015-movies`
+  - create a file called `top-ten-songs.html` in `2015-music`
+  - create a file called `top-ten-books.html` in `2015-books`
   - create an ordered list - using HTML! - of the top 10 movies, songs, and books in each of the appropriate files
 
 **Bonus**
 
-- Look through the additional resources and do the following
+- Use man pages and google and the additional resources below to figure out how to do the following:
 
-  - look at the top/bottom 10 lines of each file
+  - find commands that let you look at the top/bottom 10 lines of each file
   - figure out how search through a file from the command line - without opening the file - for a string of text
 
 #### Starter code
@@ -92,7 +96,7 @@ No starter code needed for this lab!
 
 #### Deliverable
 
-Be sure you open up your "my-favorite-things" directory in Sublime/Atom, so you can track your progress. Here's a look at what your files/folders should look like after each big step in the exercise:
+Be sure you open up your `my-favorite-things` directory in Sublime/Atom, so you can track your progress. Here's a look at what your files/directories should look like after each big step in the exercise:
 
 - After "Organize your favorite books":
 
@@ -117,5 +121,6 @@ Be sure you open up your "my-favorite-things" directory in Sublime/Atom, so you 
 
 ## Additional Resources
 
+- **MAN PAGES!** ([see "RTFM"](https://en.wikipedia.org/wiki/RTFM)) The entire development community prizes self-reliance as a virtue. To succeed, developers need to persistent and driven solve problems on their own. Of course we'll guide you, keep an eye on you, and answer questions, but as we do so we will focus on instilling/enhancing this quality in our developers throughout the entire class.
 - A list of [CLI Shortcuts](https://gist.github.com/alexpchin/01caa027b825d5f98871)
 - An awesome Unix command [cheatsheet](https://github.com/veltman/clmystery/blob/master/cheatsheet.md)
