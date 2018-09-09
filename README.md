@@ -4,20 +4,35 @@
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
-Developing web apps requires a degree of comfort navigating and interacting with your operating system through the command line, and similar to how you'll be practicing writing and running Ruby and JavaScript later in the course, we'll be practicing creating, modifying, and moving files and folders in your terminal to get you practicing Unix commands.
+Developing web apps requires a degree of comfort navigating and interacting with your operating system through the command line, and similar to how you'll be practicing writing and running Ruby and JavaScript later in the course, we'll be practicing creating, modifying, and moving files and folders (in the Unix command line environment, we refer to folders as **directories**) in your terminal to get you practicing Unix commands. 
 
-For your first lab, you're going to create files and folders to organize your favorite books, movies, and music - then, you're going to reorganize them.
+So close Finder now and don't open it again.  If you wanna organize photos from your family reunion then ok, but for anything related to web development...) As developers we use the Unix command line almost exclusively for managing files and folde--whoops! I meant *directories*.  
 
-Be sure to use the cheatsheets in the "Additional Resources" section in case you get stuck.
+For your first lab, you're going to create files and directories to organize your favorite books, movies, and music. Then, you're going to reorganize them.
+
+There are a couple links to Unix command cheatsheets in the "Additional Resources" section, and you could probably find dozens of useful ones on Google.
+
+### Helpful tip: 
+
+Nearly every Unix command has a what's called a "[man page](https://en.wikipedia.org/wiki/Man_page)" (short for "manual page").  You can get extensive info about how any Unix command works by typing `man` and then the name of the program. 
+
+For example...
+
+```bash
+$ man ls
+```
+
+...will give you exhaustive information about how the `ls` command works and the different options (called "flags") you can use to customize the output.  Get in the habit of using `man` pages.
+
 
 ## Exercise
 
 #### Requirements
 
-- From your root directory, create a folder called "my-favorite-things"; you'll use that folder to do the exercises below
+- From your root directory, create a directory called `my-favorite-things`. You'll use that folder to do the exercises below.
 
 - Organize your favorite books
-  - in the "my-favorite-things" folder, create a folder called "books"
+  - in the `my-favorite-things` directory, create a directory called `books`
   - create a folder in books named after your favorite author (e.g. "mark-twain", or "john-grisham", but avoid spaces!)
   - create files named after some of the author's books in the author's folder
   - open the books folder in atom/sublime
