@@ -49,7 +49,7 @@ Hit the `Q` key to get out of the man page viewer.
   - create a directory in the movies directory named after your favorite actor
   - create a directory in that actor directory named after that actor's breakthrough movie
   - go back to the `movies` directory and create a text file named after the actor's character in their breakthrough movie
-  - move the text file into the directory for their
+  - move the text file into the directory for that actor
   - look back at Sublime/Atom and edit that text file to include a description of the character's role in the movie
 
 
