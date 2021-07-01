@@ -39,7 +39,7 @@ Hit the `Q` key to get out of the man page viewer.
   - in the `my-favorite-things` directory, create a directory called `books`
   - create a directory in books named after your favorite author (e.g. `mark_twain`, or `john-grisham`, but avoid spaces!)
   - create files named after some of the author's books in the author's directory
-  - open the `books` directory in Sublime/Atom
+  - open the `books` directory in VS Code, Sublime, or Atom
   - edit each book file to contain a brief description of the book
 
 
@@ -50,7 +50,7 @@ Hit the `Q` key to get out of the man page viewer.
   - create a directory in that actor directory named after that actor's breakthrough movie
   - go back to the `movies` directory and create a text file named after the actor's character in their breakthrough movie
   - move the text file into the directory for that actor
-  - look back at Sublime/Atom and edit that text file to include a description of the character's role in the movie
+  - look back at your code editor and edit that text file to include a description of the character's role in the movie
 
 
 - Organize your favorite music
