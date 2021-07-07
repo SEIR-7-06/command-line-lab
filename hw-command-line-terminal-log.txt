@@ -1,0 +1,108 @@
+Last login: Tue Jul  6 16:29:18 on ttys000
+➜  ~ cd OneDrive/GA-SEI/Fundamentals/terminal_practice 
+➜  terminal_practice mkdir command-line-lab
+➜  terminal_practice cd command-line-lab
+➜  command-line-lab mkdir my-favorite-things
+➜  command-line-lab cd my-favorite-things 
+➜  my-favorite-things mkdir books
+➜  my-favorite-things cd books 
+➜  books mkdir butler-octavia
+➜  books cd butler-octavia 
+➜  butler-octavia touch kindred.txt parable-of-the-sower.txt
+➜  butler-octavia ls
+kindred.txt              parable-of-the-sower.txt
+➜  butler-octavia touch parable-of-the-talents.txt fledgling.txt
+➜  butler-octavia ls
+fledgling.txt              parable-of-the-sower.txt
+kindred.txt                parable-of-the-talents.txt
+➜  butler-octavia cd ..
+➜  books cd ..
+➜  my-favorite-things code books
+➜  my-favorite-things mkdir movies
+➜  my-favorite-things cd movies 
+➜  movies mkdir watson-emma
+➜  movies cd watson-emma 
+➜  watson-emma mkdir harry-potter-and-the-sorcerers-stone
+➜  watson-emma cd ..
+➜  movies touch hermione-granger.txt
+➜  movies mv hermione-granger.txt ../movies/watson-emma/hermione-granger.txt
+➜  movies ls
+watson-emma
+➜  movies cd watson-emma 
+➜  watson-emma ls
+harry-potter-and-the-sorcerers-stone hermione-granger.txt
+➜  watson-emma code hermione-granger.txt
+➜  watson-emma cd ..
+➜  movies cd ..
+➜  my-favorite-things mkdir music
+➜  my-favorite-things cd music 
+➜  music mkdir disco
+➜  music cd disco 
+➜  disco touch ymca.txt
+➜  disco cd .. 
+➜  music rm -r disco
+➜  music ls
+➜  music mkdir creed
+➜  music ls
+creed
+➜  music rm -r creed
+➜  music ls
+➜  music mkdir one-direction the-strokes rihanna
+➜  music ls
+one-direction rihanna       the-strokes
+➜  music cd one-direction 
+➜  one-direction touch what-makes-you-beautiful.txt
+➜  one-direction cp what-makes-you-beautiful.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+➜  one-direction cp what-makes-you-beautiful.txt ../rihanna/                   
+➜  one-direction cp what-makes-you-beautiful.txt ../the-strokes/
+➜  one-direction ls
+what-makes-you-beautiful.txt
+➜  one-direction cd ..
+➜  music cd rihanna
+➜  rihanna ls
+what-makes-you-beautiful.txt
+➜  rihanna mv what-makes-you-beautiful.txt pon-de-replay.txt      
+➜  rihanna ls
+pon-de-replay.txt
+➜  rihanna cd ..
+➜  music cd the-strokes 
+➜  the-strokes mv what-makes-you-beautiful.txt the-adults-are-talking.txt
+➜  the-strokes ls
+the-adults-are-talking.txt
+➜  the-strokes cd ..
+➜  music cd ..
+➜  my-favorite-things mkdir media
+➜  my-favorite-things mv books media 
+➜  my-favorite-things ls
+media  movies music
+➜  my-favorite-things mv movies media
+➜  my-favorite-things mv music media
+➜  my-favorite-things ls
+media
+➜  my-favorite-things cp media 2015-media
+cp: media is a directory (not copied).
+➜  my-favorite-things cp -r media 2015-media
+➜  my-favorite-things ls
+2015-media media
+➜  my-favorite-things cd 2015-media 
+➜  2015-media ls
+books  movies music
+➜  2015-media mv books 2015-books
+➜  2015-media mv movies 2015-movies
+➜  2015-media mv music 2015-music
+➜  2015-media ls
+2015-books  2015-movies 2015-music
+➜  2015-media touch 2015-books/top-ten-books.html
+➜  2015-media touch 2015-movies/top-ten-movies.html
+➜  2015-media touch 2015-music/top-ten-songs.html
+➜  2015-media ls
+2015-books  2015-movies 2015-music
+➜  2015-media cd 2015-books 
+➜  2015-books ls
+butler-octavia     top-ten-books.html
+➜  2015-books code top-ten-books.html 
+➜  2015-books cd ..
+➜  2015-media code 2015-movies/top-ten-movies.html 2015-music/top-ten-songs.html
+➜  2015-media 
