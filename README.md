@@ -94,7 +94,7 @@ Hit the `Q` key to get out of the man page viewer.
 
 No starter code needed for this lab!
 
-#### Deliverable
+#### Reference Screenshots
 
 Be sure you open up your `my-favorite-things` directory in Sublime/Atom, so you can track your progress. Here's a look at what your files/directories should look like after each big step in the exercise:
 
